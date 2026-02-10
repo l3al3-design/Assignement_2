@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .submit-button {
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     position: relative;
@@ -53,3 +54,60 @@
     margin-top: -8px;
 }
 
+=======
+.submit-button {
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+    width: 200px;
+    padding: 20px;
+    border-radius: 24px;
+    margin-top: 20px;
+    justify-content: space-between;
+
+    border: 2px solid #ffd700;
+    background: linear-gradient(135deg, rgba(255, 0, 128, 0.25), rgba(255, 107, 53, 0.15)) !important;
+    color: #fff;
+    font-weight: 800;
+    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.submit-button:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(255, 0, 128, 0.3);
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-radius: 60px;
+    padding: 20px;
+}
+
+.text-bubble {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    background: rgba(30, 41, 59, 0.8);
+    border: 2px solid rgba(255, 0, 128, 0.3);
+    text-align: center;
+    padding: 32px;
+    margin-bottom: 20px;
+    border-radius: 24px;
+}
+
+.tho {
+    display: block;         /* AI assisted: couldn't figure out why the margin wasn't working*/
+    align-items: center;
+    font-family: 'Righteous', sans-serif;
+    font-size: 36px;
+    color: #f7f7f7;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    margin-top: -8px;
+}
+
+>>>>>>> a35711b2f4d96263ef6dff74c32e85f87c44069f
