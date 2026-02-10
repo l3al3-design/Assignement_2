@@ -1,9 +1,18 @@
 body {
       box-sizing: border-box;
       background: linear-gradient(135deg, #0a0a0f 0%, #1a0a1f 25%, #0f1419 50%, #1a0520 75%, #0a0a0f 100%);
-      overflow-x: hidden;  /* recommended by AI to prevent horizontal scroll bar */
+      overflow-x: hidden;  /* AI-assisted: recommended by ChatGPT to prevent horizontal scroll bar */
     }
-    
+
+    .text-spacing {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      margin-top: -8px;
+    }
+
+    /********* BACKGROUND *********/
     #app-wrapper {
       height: 100%;
       width: 100%;
@@ -53,6 +62,7 @@ body {
         animation: float 10s ease-in-out infinite;
     }
     
+    /********* ANIMATION *********/
     @keyframes neon-pulse {
       0%, 100% { 
         text-shadow: 0 0 10px #ff0080, 0 0 20px #ff0080, 0 0 30px #ff0080;
@@ -84,7 +94,8 @@ body {
     .neon-title {
       animation: neon-pulse 2s ease-in-out infinite;
     }
-    
+
+    /*********PAGE 1 BOXES *********/
     .event-card {
       transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
       position: relative;
@@ -113,6 +124,131 @@ body {
       box-shadow: 0 20px 40px rgba(255, 0, 128, 0.3);
     }
     
+    /********* FOOTER *********/
+    .footer {
+      background: rgba(30, 41, 59, 0.8);
+      border: 2px solid rgba(255, 0, 128, 0.3);
+      display: inline-block;
+      text-align: center;
+      padding: 32px;
+      margin-bottom: 24px;
+      border-radius: 24px;
+    }
+    
+    .details-text {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+      margin-bottom: 16px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #cbd5e1;
+    }
+    
+    .note-text {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+      color: #94a3b8;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    .owner-signature {
+      font-family: 'Brush Script MT', cursive;
+      font-style: italic;
+      font-size: 24px;
+      font-weight: bold;
+      color: #ff0080;
+    }
+
+    .discrete-text {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+      color: #475569;
+      letter-spacing: 1px;
+    }
+
+    /********* TEXT FOCUS *********/
+    .font-display { font-family: 'Righteous', sans-serif; }
+    .font-body { font-family: 'Montserrat', sans-serif; }
+
+    .text-subtitle {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-family: 'Righteous', sans-serif;
+      font-size: 36px;
+      color: #f7f7f7;
+      letter-spacing: 1px;
+    }
+
+    /********* BOXES FOCUS *********/
+    .time-box {
+      background: linear-gradient(135deg, #ff0080, #ff6b35); 
+      color: white;
+      padding: 8px 12px;
+      font-weight: bold;
+      border-radius: 20px;
+      font-size: 16px;
+      display: inline-block;
+      align-items: center;
+      justify-content: space-between;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.9rem;
+      color: #cbd5e1;
+      letter-spacing: 1px;
+    }
+    
+    .pink-box {
+      background: linear-gradient(135deg, rgba(255, 0, 128, 0.15), rgba(255, 107, 53, 0.1));
+      position: relative;
+      border-radius: 16px;
+      padding: 16px;
+    }
+
+    .pink-text {
+      color: #ff0080;
+      font-weight: bold;
+      font-size: 19px;
+      font-family: 'Montserrat', sans-serif;
+      margin-bottom: 4px;
+    }
+
+    .white-text {
+      color: #cbd5e1;
+      font-weight: 400;
+      font-size: 16px;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .bold-white-text {
+      color: #fff;
+      font-weight: 600;
+      font-size: 16px;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .yellow-box {
+      display: flex;
+      align-items: center;
+      padding: 12px 8px;
+      border-radius: 24px;
+      background: linear-gradient(135deg, rgba(255, 215, 0, 0.15), rgba(255, 237, 78, 0.1));
+      color: #ffd700;
+      font-weight: 500;
+      font-size: 16px;
+    }
+
+    .purp-box {
+      border: 4px solid #ffd700;
+      background: linear-gradient(135deg, rgba(255, 0, 128, 0.25), rgba(255, 107, 53, 0.15));
+    }
+
+     /********* EXTRAS *********/
     .emoji-icon {
       display: inline-block;
       animation: float 3s ease-in-out infinite;
@@ -138,68 +274,11 @@ body {
       font-size: 0.7rem;
       letter-spacing: 1px;
       box-shadow: 0 4px 10px rgba(255, 215, 0, 0.3);
-      animation: float 2.5s ease-in-out infinite;
+      display: inline-block;
+      
     }
   
     @keyframes glow-rotate {
       0% { filter: hue-rotate(0deg); }
       100% { filter: hue-rotate(360deg); }
-    }
-    
-    .owner-signature {
-      font-family: 'Brush Script MT', cursive;
-      font-style: italic;
-    }
-
-    /********* TEXT FOCUS *********/
-    .font-display { font-family: 'Righteous', sans-serif; }
-    .font-body { font-family: 'Montserrat', sans-serif; }
-
-    .text-subtitle {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      font-family: 'Righteous', sans-serif;
-      font-size: 36px;
-      color: #f7f7f7;
-      letter-spacing: 1px;
-    }
-
-    .text-time {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 0.9rem;
-      color: #cbd5e1;
-      margin-top: 5px;
-      letter-spacing: 1px;
-    }
-
-    /********* BOXES FOCUS *********/
-    .time-box {
-      background: linear-gradient(135deg, #ff0080, #ff6b35); 
-      color: white;
-      padding: 8px 16px;
-      font-weight: bold;
-      border-radius: 20px;
-      font-size: 16px;
-      display: inline-block;
-      align-items: center;
-      justify-content: space-between;
-    }
-    
-    .pink-box {
-      background: linear-gradient(135deg, rgba(255, 0, 128, 0.15), rgba(255, 107, 53, 0.1));
-      position: relative;
-      border-radius: 16px;
-      padding: 16px;
-    }
-
-    .yellow-box {
-      display: flex;
-      align-items: center;
-      padding: 12px 8px;
-      border-radius: 24px;
-      background: linear-gradient(135deg, rgba(255, 215, 0, 0.15), rgba(255, 237, 78, 0.1));
-      color: #ffd700;
-      font-size: 24px;
-      font-weight: 600;
     }

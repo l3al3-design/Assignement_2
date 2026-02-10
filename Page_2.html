@@ -9,41 +9,175 @@
   <link href="https://fonts.googleapis.com/css2?family=Righteous&amp;family=Montserrat:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="StyleFile.css">
   <link rel="stylesheet" href="Header.css">
+  <link rel="stylesheet" href="menu.css">
   
 </head>
 
-<!----- NAV BAR ----->
 <body>
-  <div>
-    <ul class="nav-links">
-      <li><a href="Page_1_Copied.html">SCHEDULE</a></li>
-      <li><a href="Page_2.html">MENU</a></li>
-      <li><a href="Page_3.html">CONTACT</a></li>
-    </ul>
-  </div>
 
-<!----- background element ----->
   <div id="app-wrapper" class="h-full w-full overflow-auto">
+  
+<!---------------------- BACKGROUND ----------------------->
     <div class="background-animations">
-        <div class="blob blob-pink"></div>
-        <div class="blob blob-cyan"></div>
-        <div class="blob blob-orange"></div>
-    </div>
-  </div>
- 
+      <div class="blob blob-pink"></div>
+      <div class="blob blob-cyan"></div>
+      <div class="blob blob-orange"></div>
+   </div>
 
-<!----- TITLES ----->
+<!---------------------- NAV BAR ----------------------->
+   <div class="spacing">
+    <header class="h-full font-body">
+    <div>
+        <ul class="nav-links">
+            <li><a href="Page_1_edit.html">SCHEDULE</a></li>
+            <li><a href="Page_2.html">MENU</a></li>
+            <li><a href="Page_3.html">CONTACT</a></li>
+        </ul>
+    </div>
+ 
+ <!---------------------- TITLES ----------------------->
   <div class="text-center mb-12 relative">    <!-- mb = margin bottom and mt = margin top -->
     <div class="inline-block mb-4 mt-8"><span class="special-badge">EST. BY JOHN ROCK</span>
     </div>
  
-     <!---------------------- TITLE HEADER ----------------------->
+    <!---------------------- TITLE HEADER ----------------------->
       <h1 id="bar-name" class="font-display text-7xl md:text-8xl lg:text-9xl tracking-wider mb-3 neon-title" style="color: #ff0080; line-height: 1;">BOOYUM</h1>
       <p id="tagline" class="text-xl md:text-2xl tracking-widest uppercase font-bold mb-4" style="color: #00d4ff; text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);">YOUR WEEK STARTS HERE</p>
       <div class="flex items-center justify-center gap-3 text-sm font-semibold" style="color: #ffd700;"><span class="emoji-icon" style="animation-delay: 0s;">🍻</span> <span>DRINK</span> <span>•</span> <span>DANCE</span> <span>•</span> <span>VIBE</span> <span class="emoji-icon" style="animation-delay: 1s;">🎉</span>
       </div>
   </div>
 
+<!----- CONTENT ----->
+  <div class="menu-box">
 
+    <div class = "event-card"> <!----- 5 ----->
+      <span class="text-spacing"><span class = "text-subtitle">Paloma</span> <span class = "time-box">$9</span></span>
+      <span class = "image"><img src="https://www.southernliving.com/thmb/pn9NrRsTpG-U1xpRyIN90C5wcJw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Southern-Living-Paloma--Step-4-1769-84d74c08ebca4c0fba05cbce1d75c3d3.jpg" class="images"></img>
+      </span>
+      <div class = "desc-box">Vodka, Grapefruit juice, 7-up 2oz.</div>
+    </div>
+
+    <div class = "event-card"> <!----- 6 ----->
+      <span class="text-spacing"><span class = "text-subtitle">Manhattan</span> <span class = "time-box">$12</span></span>
+      <span class = "image"><img src="https://cdn.diffordsguide.com/cocktail/O5K6nA/default/0/512x.webp?v=1737701598" class="images"></img>
+      </span>
+      <div class = "desc-box">Rye whiskey, Sweet Vermouth, Bitters         3 oz.</div>
+    </div>
+
+    <div class = "event-card"> <!----- 7 ----->
+      <span class="text-spacing"><span class = "text-subtitle">Negroni</span> <span class = "time-box">$14</span></span>
+      <span class = "image"><img src="https://www.liquor.com/thmb/KPTRXSVO7vyx7O2fPyNkLh9JQPo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/mezcal-negroni-1500x1500-primary-6f6c472050a949c8a55aa07e1b5a2d1b.jpg" class="images"></img>
+      </span>
+      <div class = "desc-box">Gin, Campari, Sweet Vermouth         4 oz.</div>
+    </div>
+
+    <div class = "event-card"> <!----- 8 ----->
+      <span class="text-spacing"><span class = "text-subtitle">Margarita</span> <span class = "time-box">$10</span></span>
+      <span class = "image"><img src="https://www.pamperedchef.ca/iceberg/com/recipe/1444068-lg.jpg" class="images"></img>
+      </span>
+      <div class = "desc-box">Tequila, Cointreau, Lime         2 oz.</div>
+    </div>
+
+<div class = "event-card"> <!----- 1 ----->
+      <span class="text-spacing"><span class = "text-subtitle">Old Fashionned</span> <span class = "time-box">$12</span></span>
+      <span class = "image"><img src="https://www.allrecipes.com/thmb/DQIEfVzC7KndUnnHJbmB44a0u3Y=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/221320-old-fashioned-cocktail-ddmfs-3X4-13181414-bf1365252476463b9650096c28b5acfd.jpg" class="images"></img>
+      </span>
+      <div class = "desc-box"><span>Bourbon, Bitters, Sugar & Orange Twist         2 oz.</span></div>
+    </div>
+
+    <div class = "event-card"> <!----- 2 ----->
+      <span class="text-spacing"><span class = "text-subtitle">Dark & Stormy</span> <span class = "time-box">$14</span></span>
+      <span class = "image"><img src="https://www.thespruceeats.com/thmb/2Lej0Iw4N4bIdliQ9I4vqBO0dns=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/dark-n-stormy-mocktail-5210226-hero-01-60f80ee489044b0689d149a971e7c52b.jpg" class="images"></img>
+      </span>
+      <div class = "desc-box">Dark Rum, Ginger Beer         3 oz.</div>
+    </div>
+  
+    <div class = "event-card"> <!----- 3 ----->
+      <span class="text-spacing"><span class = "text-subtitle">Lemonade Cocktails</span> <span class = "time-box">$9</span></span>
+      <span class = "image"><img src="https://www.jimbeam.com/sites/default/files/styles/original/public/2024-07/jim-beam-cocktail-honey-lemonade.jpg.webp?itok=b5ejdrmK" class="images"></img>
+      </span>
+      <div class = "desc-box">Homemade lemonade, vodka 2 oz.</div>
+    </div>
+
+    <div class = "event-card"> <!----- 4 ----->
+      <span class="text-spacing"><span class = "text-subtitle">Moscow Mule</span> <span class = "time-box">$13</span></span>
+      <span class = "image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7-VCrRSxc89DJDeUokRntji7RWegXeYaR0A&s" class="images"></img>
+      </span>
+      <div class = "desc-box">Vodka, Ginger Beer, Lime         3 oz.</div>
+    </div>
+
+    <div class = "event-card"> <!----- 9 ----->
+      <span class="text-spacing"><span class = "text-subtitle">Bloody Mary</span> <span class = "time-box">$8</span></span>
+      <span class = "image"><img src="https://www.jimbeam.com/sites/default/files/2024-07/jim-beam-cocktail-rye-bloody.jpg" class="images"></img>
+      </span>
+      <div class = "desc-box">Tomato juice, Vodka, Lemon juice, Tabasco sauce 2oz.</div>
+    </div>
+
+    <div class = "event-card"> <!----- 10 ----->
+      <span class="text-spacing"><span class = "text-subtitle" style = "display: block;"> Draft <span style = "display: block;">Beer</span></span>  <span class = "time-box">$10</span></span>
+      <span class = "image"><img src="https://www.tastingtable.com/img/gallery/why-draft-beer-tastes-better-than-bottled/the-tasting-experience-1648062930.jpg" class="images"></img>
+      </span>
+      <div class = "desc-box">Chocie between Bench balls falls and Stella Artois         15 oz.</div>
+    </div>
+
+    <div class = "event-card"> <!----- 11 ----->
+      <span class="text-spacing"><span class = "text-subtitle">Bottled Beer</span> <span class = "time-box">$7.50</span></span>
+      <span class = "image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdUrEDUzn3KhWfYEJy1xnJsEXF70esmxC_vw&s" class="images"></img>
+      </span>
+      <div class = "desc-box">Chocie between Coors, Molson Canadian and Belgian Moon             500ml</div>
+    </div>
+
+    <div class = "event-card"> <!----- 12 ----->
+      <span class="text-spacing"><span class = "text-subtitle">House Wines</span> <span class = "time-box">$11</span></span>
+      <span class = "image"><img src="https://www.ankenyfamilydentist.com/wp-content/uploads/blog/2014/06/red-vs-white-wine.jpg" class="images"></img>
+      </span>
+      <div class = "desc-box">Chocie between white or red wine 16 oz.</div>
+    </div>
+
+    <div class = "event-card"> <!----- 13 ----->
+      <span class="text-spacing"><span class = "text-subtitle"style = "display: block;">Blue <span style = "display: block;">Shoe</span></span> <span class = "time-box">$8</span></span>
+      <span class = "image"><img src="https://vodka360.com/wp-content/uploads/2021/06/360-Blue-Raspberry-Cooler-768x768.jpg" class="images"></img>
+      </span>
+      <div class = "desc-box">Hawaiin Punch, Cranberry juice, 7-up</div>
+    </div>
+
+    <div class = "event-card"> <!----- 134 ----->
+      <span class="text-spacing"><span class = "text-subtitle" style = "display: block;">Virgin <span style = "display: block;">Mary</span></span> <span class = "time-box">$6</span></span>
+      <span class = "image"><img src="https://www.thespruceeats.com/thmb/rChqTH3KnJNlOkYOo2OU7tuMLH4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/virgin-mary-mocktail-recipe-760925-hero-images-1-b566f16eb7ae4876bf2adc65ce77c6be.jpg" class="images"></img>
+      </span>
+      <div class = "desc-box">Tomato juice, Lemon juice, Tabasco sauce</div>
+    </div>
+
+    <div class = "event-card"> <!----- 15 ----->
+      <span class="text-spacing"><span class = "text-subtitle">Shirley temple</span> <span class = "time-box">$8</span></span>
+      <span class = "image"><img src="https://oasis.ca/wp-content/uploads/2024/07/Shirley-Temple-format-carre.png" class="images"></img>
+      </span>
+      <div class = "desc-box">Orange juice, cranberry juice, 7-up</div>
+    </div>
+
+    <div class = "event-card"> <!----- 16 ----->
+      <span class="text-spacing"><span class = "text-subtitle">Virgin Mojito</span> <span class = "time-box">$8</span></span>
+      <span class = "image"><img src="https://abeautifulmess.com/wp-content/uploads/2023/05/Virgin-Mojito.jpg" class="images"></img>
+      </span>
+      <div class = "desc-box">Lime, mint, simple syrup, and 7-up</div>
+    </div>
+
+  </div>
+
+  <!---------------------- FOOTER ----------------------->
+    <footer class="mt-10 text-center relative">
+     <div class="footer">
+      <div class="details-text"><span>📍</span> <span>123 Night Street, Downtown</span> </span> <span>📞</span> <span>(555) 123-4567</span></span> <span>🕐</span><span>Open Daily 4PM - 2AM</span> </span>
+      </div>
+      <p class="note-text">21+ Only • Valid ID Required • Drink Responsibly</p>
+      <p class="owner-signature">- John Rock, Owner</p>
+     </div>
+     <div class="discrete-text mb-3"> <p>FOLLOW @BOOYUMBAR FOR UPDATES &amp; SURPRISES 🎉</p>
+     </div>
+    </footer>
+   </div>
+  </div>
+  
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9c946fe444b4e21a',t:'MTc3MDMxNTc4Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
 </body>
 </html>
